@@ -1,0 +1,28 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Book List</h1>
+
+    <form action="" method="get">
+      <input name="query" type="text" placeholder="Search...">
+    </form>
+
+    <br>
+
+    {% if object_list %}
+    <ul>
+
+      {% for book in object_list %}
+      <li>
+        <!-- <img src="/static/images/{{book.title}}.jpg" width="50px" /> -->
+        <a href="{{ book.get_absolute_url }}" style="text-decoration: none;">{{ book.title }}</a> ({{book.author}})
+      </li>
+      {% endfor %}
+
+    </ul>
+
+    {% else %}
+      <p>There are no books in the library.</p>
+    {% endif %}       
+{% endblock %}
+
