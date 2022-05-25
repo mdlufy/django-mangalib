@@ -9,9 +9,9 @@ This web application creates an online catalog for a small local manga library, 
 The main features that have currently been implemented are:
 
 * There are models for books, book copies, genre, language and authors, comments.
-* Users can view list and detail information for titles and authors, search title and author by name.
+* Users can view list and detail information for titles and authors, search titles and authors by name.
 * Admin users can create and manage models. The admin has been optimised.
-* Librarians can renew reserved books, create, update, delete titles and authors.
+* Librarians can renew reserved titles. Create, update, delete titles and authors.
 
 ![Home Page](https://raw.githubusercontent.com/mdlufy/django-mangalib/main/catalog/static/images/main.jpg)
 
