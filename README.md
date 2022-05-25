@@ -32,4 +32,4 @@ To get this project up and running locally on your computer:
 
 1. Open a browser to `http://127.0.0.1:8000/admin/` to open the admin site
 1. Create a few test objects of each type.
-1. Open tab to `http://127.0.0.1:8000` to see the main site, with your new objects.
+1. Open tab to `http://127.0.0.1:8000/catalog/` to see the main site, with your new objects.
