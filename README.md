@@ -13,7 +13,7 @@ The main features that have currently been implemented are:
 * Admin users can create and manage models. The admin has been optimised.
 * Librarians can renew reserved books, create, update, delete titles and authors.
 
-![Home Page](https://raw.githubusercontent.com/mdlufy/django-mangalib/main/catalog/static/images/main.png)
+![Home Page](https://github.com/mdlufy/django-mangalib/raw/main/catalog/static/images/main.jpg)
 
 
 ## Quick Start
