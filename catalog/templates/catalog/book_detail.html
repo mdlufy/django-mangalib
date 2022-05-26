@@ -1,8 +1,16 @@
 {% extends "base_generic.html" %}
-
 {% block content %}
 
+<p>
 <h1>Title: {{ book.title }}</h1>
+{% if user.is_staff %}
+   {% if perms.catalog.can_mark_returned %}
+   <a href="{% url 'book-update' book.id %}" >Update</a>
+   <a href="{% url 'book-delete' book.id %}" >Delete</a>
+   {% endif %}
+{% endif %}
+</p>
+
 <img src="/static/images/{{book.title}}.jpg" width="200px" />
 <br><br>
 <p><strong>Author:</strong> <a href="{{ book.author.get_absolute_url }}" style="text-decoration: none;">{{ book.author }}</a></p>
@@ -10,6 +18,7 @@
 <p><strong>ISBN:</strong> {{ book.isbn }}</p> 
 <p><strong>Language:</strong> {{ book.language }}</p>  
 <p><strong>Genre:</strong> {{ book.genre.all|join:", " }}</p>
+
 
 {% if book.bookinstance_set.all %}
 <div style="margin-left:20px;margin-top:20px">
