@@ -3,3 +3,22 @@
     padding: 0;
     list-style: none;
 }
+
+#update-button {
+    display: inline-block;
+    background: #078522e8;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#delete-button {
+    display: inline-block;
+    background: #f11919eb;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
