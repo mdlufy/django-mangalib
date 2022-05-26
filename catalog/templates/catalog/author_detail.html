@@ -7,8 +7,8 @@
 <p>{{author.date_of_birth}} - {% if author.date_of_death %}{{author.date_of_death}}{% endif %}</p>
 {% if user.is_staff %}
    {% if perms.catalog.can_mark_returned %}
-   <a href="{% url 'author-update' author.id %}" >Update</a>
-   <a href="{% url 'author-delete' author.id %}" >Delete</a>
+   <a href="{% url 'author-update' author.id %}" id="update-button">Update</a>
+   <a href="{% url 'author-delete' author.id %}" id="delete-button">Delete</a>
    {% endif %}
 {% endif %}
 </p>

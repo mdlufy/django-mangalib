@@ -4,9 +4,9 @@
 <p>
 <h1>Title: {{ book.title }}</h1>
 {% if user.is_staff %}
-   {% if perms.catalog.can_mark_returned %}
-   <a href="{% url 'book-update' book.id %}" >Update</a>
-   <a href="{% url 'book-delete' book.id %}" >Delete</a>
+   {% if perms.catalog.can_mark_returned %} 
+   <a href="{% url 'book-update' book.id %}" id="update-button">Update</a>
+   <a href="{% url 'book-delete' book.id %}" id="delete-button">Delete</a>
    {% endif %}
 {% endif %}
 </p>
