@@ -28,7 +28,7 @@
      <li><a href="{% url 'my-borrowed' %}" style="text-decoration: none;">My Borrowed</a></li>
      <li><a href="{% url 'logout'%}?next={{request.path}}" style="text-decoration: none;">Logout</a></li>   
    {% else %}
-     <li><a href="{% url 'login'%}?next={{request.path}}" style="text-decoration: none;">Login</a></li>   
+     <li><a href="{% url 'login'%}?next={{request.path}}" style="text-decoration: none;">Sign in</a></li>   
    {% endif %} 
   </ul>
   
