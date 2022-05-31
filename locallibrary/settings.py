@@ -27,7 +27,7 @@ import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = os.environ.get('DJANGO_DEBUG')
 
 # Set hosts to allow any app on Heroku and the local testing URL
 ALLOWED_HOSTS = ['boiling-lake-99724.herokuapp.com','127.0.0.1']
