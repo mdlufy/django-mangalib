@@ -16,20 +16,19 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 import os
-import environ
 
-env = environ.Env()
+env = os.environ.Env()
 
-environ.Env.read_env()
+os.environ.Env.read_env()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG') != 'False'
+DEBUG = env('DJANGO_DEBUG')
 
 # Set hosts to allow any app on Heroku and the local testing URL
 ALLOWED_HOSTS = ['.herokuapp.com','127.0.0.1']
