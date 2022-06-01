@@ -18,10 +18,6 @@ from xmlrpc.client import Boolean
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 import os
-<<<<<<< HEAD
-
-=======
->>>>>>> release-0.2
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -33,11 +29,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 DEBUG = os.environ.get('DJANGO_DEBUG')
 
 # Set hosts to allow any app on Heroku and the local testing URL
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['boiling-lake-99724.herokuapp.com','127.0.0.1', '0.0.0.0']
-=======
-ALLOWED_HOSTS = ['boiling-lake-99724.herokuapp.com','127.0.0.1', '0.0.0.0']
->>>>>>> release-0.2
+ALLOWED_HOSTS = ['boiling-lake-99724.herokuapp.com']
 
 
 # Application definition
