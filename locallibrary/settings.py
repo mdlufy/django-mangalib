@@ -18,7 +18,10 @@ from xmlrpc.client import Boolean
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 import os
+<<<<<<< HEAD
 
+=======
+>>>>>>> release-0.2
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -30,7 +33,11 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 DEBUG = os.environ.get('DJANGO_DEBUG')
 
 # Set hosts to allow any app on Heroku and the local testing URL
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['boiling-lake-99724.herokuapp.com','127.0.0.1', '0.0.0.0']
+=======
+ALLOWED_HOSTS = ['boiling-lake-99724.herokuapp.com','127.0.0.1', '0.0.0.0']
+>>>>>>> release-0.2
 
 
 # Application definition
@@ -131,8 +138,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+db_from_os.environ.get = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_os.environ.get)
 
 
 

@@ -40,10 +40,12 @@
 </div>
 {% endif %}
 
+<br>
 <h1>Comments</h1>
   {% if book.comments.all %}
       <a class="text-primary" href="{% url 'add-comment' book.id %}" style="text-decoration: none;">Add comment</a><br/><br/>
       {% for comment in book.comments.all %}
+      <hr>
           <b>{{ comment.user }}</b> - <span class="text-muted" style="font-size: 13px;">{{ comment.date }}</span>
           <p>{{ comment.body }}</p>
       {% endfor %}

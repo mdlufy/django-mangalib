@@ -29,6 +29,7 @@
      <li><a href="{% url 'logout'%}?next={{request.path}}" >Logout</a></li>   
    {% else %}
      <li><a href="{% url 'login'%}?next={{request.path}}" >Sign in</a></li>   
+     <li><a href="{% url 'registration' %}?next={{request.path}}" >Sign up</a></li>   
    {% endif %} 
   </ul>
   
