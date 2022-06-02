@@ -14,6 +14,7 @@
   <script src="{% static 'js/script.js' %}"></script>
   <link rel="stylesheet" href="{% static 'css/header.css' %}" type="text/css">
   <link rel="stylesheet" href="{% static 'css/footer.css' %}" type="text/css">
+  <link rel="icon" href="{% static 'images/myanimelist.ico' %}">
 </head>
 
 <body>
@@ -100,21 +101,23 @@
         </div>
   </div>
 
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <footer class="py-3 my-3 border-top">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center">
       <div class="col-md-4 d-flex align-items-center">
         <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
           <svg class="bi" width="30" height="24"><use xlink:href="#mangalib"/></svg>
         </a>
-        <span class="text-muted">&copy; 2022 MangaLib, Inc</span>
+        <span class="text-muted">&copy; 2022 MangaLib</span>
       </div>
   
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
         <li class="ms-3"><a class="text-muted" href="https://t.me/luffyforever/"><svg class="bi" width="24" height="24"><use xlink:href="#telegram"/></svg></a></li>
         <li class="ms-3"><a class="text-muted" href="https://github.com/mdlufy"><svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg></a></li>
       </ul>
+      </div>
+    </div> 
     </footer>
-  </div> 
 
 </body>
 
