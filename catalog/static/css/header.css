@@ -1,9 +1,3 @@
-.sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
-    list-style: none;
-}
-
 .update-button {
     display: inline-block;
     background: #078522e8;
@@ -22,7 +16,6 @@
     border-radius: 6px;
     margin-left: 10px;
 }
-
 
 .form-control-dark {
   color: #fff;
