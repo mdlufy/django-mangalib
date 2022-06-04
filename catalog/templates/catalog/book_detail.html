@@ -12,7 +12,7 @@
 {% endif %}
 </p>
 
-<img src="/static/images/{{book.title}}.jpg" width="200px" />
+<img src="/static/images/{{book.title}}.jpg" class="img-thumbnail rounded mx-auto d-block" style="height: 450px;" alt="Responsive image"/>
 <br><br>
 <p><strong>Author:</strong> <a href="{{ book.author.get_absolute_url }}" style="text-decoration: none;">{{ book.author }}</a></p>
 <p><strong>Summary:</strong> {{ book.summary }}</p>
