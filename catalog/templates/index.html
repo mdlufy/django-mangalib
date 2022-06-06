@@ -1,23 +1,28 @@
 {% extends "base_generic.html" %}
+{% load static %}
 
 {% block content %}
-<p><h1>Welcome to MangaLib!</h1></p>
+<p>
+<h1>Welcome to MangaLib!</h1>
+</p>
 
 <p>Here you can find a lot of interesting manga. </p>
 
-<div>
-{% load static %}
-<img src="{% static "images/main.jpg" %}" alt="My image" width="625px" />
-</div>  
-<br>
+<div style="margin-bottom: 40px;">
+  <picture>
+    <source srcset="{% static 'images/main.webp' %}" type="image/webp">
+    <img src="{% static 'images/main.jpg' %}" alt="Main picture" width="625px">
+  </picture>
+</div>
+
 <h2>Dynamic content</h2>
 
 <p>The library has the following record counts:</p>
 <ul>
-<li><strong>Books:</strong> {{ num_books }}</li>
-<li><strong>Copies:</strong> {{ num_instances }}</li>
-<li><strong>Copies available:</strong> {{ num_instances_available }}</li>
-<li><strong>Authors:</strong> {{ num_authors }}</li>
+  <li><strong>Books:</strong> {{ num_books }}</li>
+  <li><strong>Copies:</strong> {{ num_instances }}</li>
+  <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+  <li><strong>Authors:</strong> {{ num_authors }}</li>
 </ul>
 
 
