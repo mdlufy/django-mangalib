@@ -2,6 +2,8 @@
 
 "Local MangaLib" website written in Django.
 
+Finished application [here](https://mdlufy.github.io/react-table/)
+
 ## Overview
 
 This web application creates an online catalog for a small local manga library, where users can browse available titles and manage their accounts, leaving comments on titles.
