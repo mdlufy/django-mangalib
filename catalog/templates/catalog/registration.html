@@ -1,11 +1,14 @@
 {% extends "base_generic.html" %}
 
-
 {% block content %}
+
+{% load crispy_forms_tags %}    
+
     <p>Please, sign up using the following form:</p>
     <form action="." method="post">
-        {{ user_form.as_p }}
+        {{ user_form|crispy}}
         {% csrf_token %}
-        <p><input type="submit" value="Create my account"></p>
+        <br>
+        <p><input type="submit" value="Create account"></p>
     </form>
 {% endblock %}
