@@ -2,7 +2,7 @@
 
 "Local MangaLib" website written in Django.
 
-Finished application [here](https://mdlufy.github.io/react-table/)
+Finished application [here](https://manga-lib.herokuapp.com)
 
 ## Overview
 
